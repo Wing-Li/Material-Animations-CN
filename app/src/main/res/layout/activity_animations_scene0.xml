@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/scene0_title"
+        style="@style/MaterialAnimations.Text.Body"
+        android:text="Scenes存储了一个视图层次结构的状态，包括它的所有视图和它们的属性值。\nTransitionManager 可以在一个开始和一个结束场景之间运行动画。" />
+
+</LinearLayout>

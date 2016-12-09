@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/square_blue"
+        style="@style/AppTheme.Icon.Small"
+        android:src="@drawable/circle_24dp"
+        android:transitionName="@string/square_blue_name" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/square_blue"
+        android:layout_alignTop="@+id/square_blue"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_toEndOf="@+id/square_blue"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Fragment 2" />
+
+
+    <TextView
+        android:id="@+id/fragment2_body1"
+        style="@style/MaterialAnimations.Text.Body"
+        android:layout_below="@+id/square_blue"
+        android:layout_centerHorizontal="true"
+        android:text="蓝色的圈是两个 fragments 的共享元素" />
+
+    <TextView
+        android:id="@+id/fragment2_title"
+        style="@style/MaterialAnimations.Text.Body"
+        android:textStyle="bold"
+        android:layout_below="@+id/fragment2_body1"
+        android:text="Overlap" />
+
+    <TextView
+        style="@style/MaterialAnimations.Text.Body"
+        android:layout_below="@+id/fragment2_title"
+        android:layout_centerHorizontal="true"
+        android:text="当为 true 时,这一页的退出 和 下一也的进入 动画 同时开始。 \n当为 false 时, 会等这一页的退出动画完成，才开始前一页的进入动画。" />
+
+</RelativeLayout>

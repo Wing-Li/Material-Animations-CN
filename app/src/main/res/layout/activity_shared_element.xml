@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="sharedSample"
+            type="com.lyl.animationtest.Sample"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/MaterialAnimations.TextAppearance.Title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:colorPrimary"
+            android:elevation="@dimen/elevation_header">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:text="@{sharedSample.name}"
+                android:transitionName="@string/sample_blue_title"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            style="@style/MaterialAnimations.Text.Body"
+            android:text="Toolbar 的标题在 MainActivity 和 此Activity 是一个共享的元素。"/>
+
+        <FrameLayout
+            android:id="@+id/sample2_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>

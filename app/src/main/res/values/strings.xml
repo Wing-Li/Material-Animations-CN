@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AnimationTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="square_red_name">square_red</string>
+    <string name="square_blue_name">square_blue</string>
+    <string name="square_green_name">square_green</string>
+    <string name="transition_reveal1">transition_reveal1</string>
+
+    <string name="sample_blue_title">sample_blue_title</string>
+    <string name="long_text">Bacon ipsum dolor amet cupidatat bresaola minim, aliquip beef aute ea porchetta. Meatball brisket do, rump in beef ea ham hock spare ribs mollit qui dolore ipsum voluptate cow. Drumstick prosciutto salami duis jerky jowl. Mollit ball tip short ribs doner fugiat frankfurter leberkas andouille kevin pork loin nostrud ham culpa. Rump pariatur ham hock excepteur picanha pork. Corned beef flank proident shankle rump.</string>
+    <string name="medium_text">Porchetta landjaeger tail meatball t-bone spare ribs. Sirloin pork chop bacon pork belly strip steak. Porchetta ham meatball pig salami short ribs jowl spare ribs sirloin tongue jerky cupim chuck.</string>
+    <string name="reveal_body1">循环显示从目标视图中心开始的动画</string>
+    <string name="reveal_body2">循环显示从触摸坐标开始的动画</string>
+    <string name="reveal_body3">查看布局更改动画与完成的圆形显示动画</string>
+    <string name="reveal_body4">循环显示动画从顶部与嵌套动画结束</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

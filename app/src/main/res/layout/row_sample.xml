@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Sample"
+            type="com.lyl.animationtest.Sample"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/sample_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/spacing_double">
+
+        <ImageView
+            android:id="@+id/sample_icon"
+            style="@style/AppTheme.Icon.Small"
+            android:src="@drawable/circle_24dp"
+            android:tint="@{Sample.color}"
+            />
+
+        <TextView
+            android:id="@+id/sample_name"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Sample.name}"
+            tools:text="View animations sample"/>
+
+    </LinearLayout>
+</layout>
+
+

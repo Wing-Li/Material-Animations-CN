@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="transition1Sample"
+            type="com.lyl.animationtest.Sample"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/MaterialAnimations.TextAppearance.Title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:colorPrimary"
+            android:elevation="@dimen/elevation_header">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:text='@{transition1Sample.name}'
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            style="@style/MaterialAnimations.Text.Body"
+            android:text="这一活动定义了一个爆炸进入过渡方式。转换可以在代码或XML资源文件中定义"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sample1_button1"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Explode (Code)"/>
+
+            <Button
+                android:id="@+id/sample1_button2"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Explode (XML)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sample1_button3"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Slide (Code)"/>
+
+            <Button
+                android:id="@+id/sample1_button4"
+                style="@style/MaterialAnimations.Button"
+                android:layout_weight="1"
+                android:text="Slide (XML)"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sample1_button6"
+            style="@style/MaterialAnimations.Button"
+            android:text="Exit"/>
+
+        <Button
+            android:id="@+id/sample1_button5"
+            style="@style/MaterialAnimations.Button"
+            android:text="Exit (overriding return transition)"/>
+
+    </LinearLayout>
+</layout>
