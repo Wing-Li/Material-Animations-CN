@@ -40,8 +40,11 @@
             android:name=".three.AnimationsActivity1"
             android:theme="@style/MaterialAnimations.Green">
         </activity>
+        <activity android:name=".three.AnimationsActivity2"/>
         <activity
-            android:name=".three.AnimationsActivity2"/>
+            android:name=".four.RevealActivity"
+            android:theme="@style/MaterialAnimations.Yellow">
+        </activity>
     </application>
 
 </manifest>

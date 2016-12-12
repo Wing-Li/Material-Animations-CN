@@ -31,6 +31,7 @@ public class AnimationsActivity1 extends BaseActivity {
         bindData();
         setWindowAnimations();
         setupLayout();
+        setupToolbar();
     }
 
 

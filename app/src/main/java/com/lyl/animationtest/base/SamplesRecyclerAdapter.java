@@ -14,6 +14,7 @@ import com.lyl.animationtest.R;
 import com.lyl.animationtest.Sample;
 import com.lyl.animationtest.TransitionHelper;
 import com.lyl.animationtest.databinding.RowSampleBinding;
+import com.lyl.animationtest.four.RevealActivity;
 import com.lyl.animationtest.one.TransitionActivity1;
 import com.lyl.animationtest.three.AnimationsActivity1;
 import com.lyl.animationtest.two.SharedElementActivity;
@@ -62,7 +63,7 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                         break;
                     }
                     case 3: {
-
+                        transitionToActivity(RevealActivity.class, holder, sample, R.string.transition_reveal1);
                         break;
                     }
                 }
@@ -98,6 +99,13 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                 Pair<>(viewHolder.binding.sampleIcon, activity.getString(R.string.square_blue_name)), new Pair<>
                 (viewHolder.binding.sampleName, activity.getString(R.string.sample_blue_title)));
         startActivity(target, pairs, sample);
+    }
+
+
+    private void transitionToActivity(Class target, SamplesViewHolder viewHolder, Sample sample, int transitionName) {
+        Pair<View, String>[] pair = TransitionHelper.createSafeTransitionParticipants(activity, false, new Pair<>
+                (viewHolder.binding.sampleIcon, activity.getString(transitionName)));
+        startActivity(target, pair, sample);
     }
 
 
