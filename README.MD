@@ -6,19 +6,16 @@
 
 此demo一共分为四部分：
 
-> 1.1 普通过渡 Transition；
-
-1.2 Shared Elements Transition 共享元素；
-
-2.0 TransitionManager 控制动画；
-
+> 1.1 普通过渡 Transition；<br />
+1.2 Shared Elements Transition 共享元素；<br />
+2.0 TransitionManager 控制动画；<br />
 3.0 ViewAnimationUtils 显示或隐藏效果。
 
 
 <br />
 ***
 
-### Transition 动画
+## Transition 动画
 
 | explode | slide | fade |
 |:------:|:------:|:------:|
@@ -47,7 +44,8 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
 
 如此即可达到以上效果。
 
-### Shared Elements Transition 共享元素
+<br />
+## Shared Elements Transition 共享元素
 
 ![Shared Elements Transition](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/SharedElements.gif)
 
@@ -67,7 +65,8 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
 
     getWindow().setSharedElementEnterTransition(changeBounds);
 
-### TransitionManager 控制动画
+<br />
+## TransitionManager 控制动画
 
 ![TransitionManager](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/TransitionManager.gif)
 
@@ -103,7 +102,8 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
         }
     }
 
-### CircularReveal 显示或隐藏 的效果
+<br />
+## CircularReveal 显示或隐藏 的效果
 
 ![CircularReveal](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/CircularReveal.gif)
 
@@ -146,6 +146,7 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
     }
 
 
+<br />
 # Sample source code
 
 https://github.com/Wing-Li/Material-Animations-CN
