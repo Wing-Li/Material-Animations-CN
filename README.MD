@@ -1,16 +1,17 @@
 # Material-Animations-CN
 
-具体介绍：
+**具体介绍：**
+
 [【Transition】Android炫酷的页面切换效果](http://www.jianshu.com/p/a43daa1e3d6e)
 
-#### Transition 动画
+### Transition 动画
 
 | explode | slide | fade |
 |:------:|:------:|:------:|
 |从中心移入或移出|从边缘移入或移出|调整透明度产生渐变|
 |![](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/Explode.gif)|![](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/Slide.gif)|![](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/Fade.gif)|
 
-#### Transition 调用场景
+### Transition 调用场景
 
 上面的三张图，每张都经历了：
 
@@ -18,20 +19,25 @@
 
 Exit -> Enter -> Return -> Reenter
 
-第一个页面设置：
+**第一个页面设置：**
+
 android:windowExitTransition      启动新 Activity ，此页面退出的动画
+
 android:windowReenterTransition   重新进入的动画。即第二次进入，可以和首次进入不一样。
-第二个页面设置：
+
+**第二个页面设置：**
+
 android:windowEnterTransition     首次进入显示的动画
+
 android:windowReturnTransition    调用 finishAfterTransition() 退出时，此页面退出的动画
 
 如此即可达到以上效果。
 
-#### Shared Elements Transition 共享元素
+### Shared Elements Transition 共享元素
 
 ![Shared Elements Transition](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/SharedElements.gif)
 
-跳转时，增加了要共享的元素：
+跳转时，增加了参数，即声明要共享的元素：
 
     protected void transitionTo(Intent i) {
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(this,
@@ -47,7 +53,7 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
 
     getWindow().setSharedElementEnterTransition(changeBounds);
 
-#### TransitionManager 控制动画
+### TransitionManager 控制动画
 
 ![TransitionManager](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/TransitionManager.gif)
 
@@ -83,7 +89,7 @@ android:windowReturnTransition    调用 finishAfterTransition() 退出时，此
         }
     }
 
-#### CircularReveal 显示或隐藏 的效果
+### CircularReveal 显示或隐藏 的效果
 
 ![CircularReveal](https://github.com/Wing-Li/Material-Animations-CN/blob/master/img/CircularReveal.gif)
 
