@@ -1,18 +1,21 @@
 # Material-Animations-CN
 
-## **具体介绍：**
-
-[【Transition】Android炫酷的页面切换效果](http://www.jianshu.com/p/a43daa1e3d6e)
+## **具体介绍：**[【Transition】Android炫酷的页面切换效果](http://www.jianshu.com/p/a43daa1e3d6e)
 
 **此篇 API 均为 Android 5.0（API 级别 21） 以上才可支持。**
 
 此demo一共分为四部分：
 
 > 1.1 普通过渡 Transition；
+
 1.2 Shared Elements Transition 共享元素；
+
 2.0 TransitionManager 控制动画；
+
 3.0 ViewAnimationUtils 显示或隐藏效果。
 
+
+<br />
 ***
 
 ### Transition 动画
