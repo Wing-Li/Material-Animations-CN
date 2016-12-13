@@ -317,6 +317,4 @@ public class RevealActivity extends BaseActivity implements View.OnClickListener
         anim.start();
         return anim;
     }
-
-
 }

@@ -17,6 +17,7 @@ public class TransitionActivity1 extends BaseActivity {
 
     private Sample sample;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class TransitionActivity1 extends BaseActivity {
         bindData();
         setupWindowAnimations();
         setupLayout();
+        setupToolbar();
     }
 
 
@@ -44,8 +46,8 @@ public class TransitionActivity1 extends BaseActivity {
         // getWindow().setReenterTransition(visibility);
 
         // 启动新 Activity ，此页面退出的动画
-         visibility =buildReturnTransition();
-         getWindow().setExitTransition(visibility);
+        visibility = buildReturnTransition();
+        getWindow().setExitTransition(visibility);
 
         // 调用 finishAfterTransition() 退出时，此页面退出的动画
         // visibility = buildReturnTransition();
